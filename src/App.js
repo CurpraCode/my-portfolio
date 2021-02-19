@@ -4,6 +4,7 @@ import './App.css';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "boxicons";
+import ScrollUp from "./ScrollUp"
 
 function App() {
 useEffect(()=>{
@@ -12,6 +13,7 @@ useEffect(()=>{
   return (
     <div className="App">
    <Home/>
+   <ScrollUp/>
     </div>
   );
 }

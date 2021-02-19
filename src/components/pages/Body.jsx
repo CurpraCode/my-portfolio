@@ -50,7 +50,7 @@ function Body() {
   //   };
   //   document.addEventListener("DOMContentLoaded", () => {
   //     if (txtArr.length) setTimeout(type, newTextDelay + 250);
-//   });
+  //   });
 
   return (
     <Main id="home">
@@ -83,32 +83,44 @@ function Body() {
             <button>HIRE ME</button>
           </a>
           <div className="social-body">
-            <a href="https://github.com/CurpraCode" target="_blank" rel="noopener noreferrer">
-            <box-icon
-              name="github"
-              type="logo"
-              size="lg"
-              animation="spin-hover"
-              color="#4b4bff"
-            ></box-icon>
+            <a
+              href="https://github.com/CurpraCode"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                name="github"
+                type="logo"
+                size="lg"
+                animation="spin-hover"
+                color="#4b4bff"
+              ></box-icon>
             </a>
-            <a href="https://www.linkedin.com/in/curtis-oyakoya-b70b091b2/" target="_blank" rel="noopener noreferrer">
-            <box-icon
-              type="logo"
-              name="linkedin"
-              size="lg"
-              animation="spin-hover"
-              color="#4b4bff"
-            ></box-icon>
+            <a
+              href="https://www.linkedin.com/in/curtis-oyakoya-b70b091b2/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                type="logo"
+                name="linkedin"
+                size="lg"
+                animation="spin-hover"
+                color="#4b4bff"
+              ></box-icon>
             </a>
-            <a href="https://twitter.com/CurpraCode" target="_blank" rel="noopener noreferrer">
-            <box-icon
-              name="twitter"
-              type="logo"
-              size="lg"
-              animation="spin-hover"
-              color="#4b4bff"
-            ></box-icon>
+            <a
+              href="https://twitter.com/CurpraCode"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                name="twitter"
+                type="logo"
+                size="lg"
+                animation="spin-hover"
+                color="#4b4bff"
+              ></box-icon>
             </a>
           </div>
         </div>
@@ -123,15 +135,16 @@ function Body() {
 export default Body;
 
 const Main = styled.div`
-  margin-top: 150px;
-  height: 100vh;
+  padding: 100px 0;
+  /* margin-top: 150px; */
+  /* height: 100vh; */
 `;
 
 const Section = styled.div`
   /* margin-top: 90px; */
   margin: 0 auto;
   max-width: 1240px;
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -196,7 +209,7 @@ const Section = styled.div`
       transition: 0.1s;
       color: #3939fd;
       font-size: 1.1rem;
-      transform:scale(0.9);
+      transform: scale(0.9);
     }
     :focus {
       outline: none;

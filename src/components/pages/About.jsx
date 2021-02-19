@@ -6,51 +6,53 @@ import "boxicons";
 
 function About() {
   return (
-    <div id="about">
+    <MainAbout id="about">
       <AboutSection>
-        <ImgDiv>
-          {/* <img src={circle} alt=""/> */}
-        </ImgDiv>
-     <AboutDiv>
-     <h1 >About Me</h1>
-        <p data-aos="fade-left">
-          I am a creative FullStack Engineer and Self-Proclaimed genius. I have
-          always been passionate about everything related to technology and IT,
-          especially the web professions, which I made my career by always
-          giving the best of myself as a Web Developer. I also love to code things
-          from scratch, and enjoy bringing ideas to life in the browser,
-          combining the acquisition of new knowledge with independent work on
-          various projects. Aside code I love watching movies and travelling to different places.
-        </p>
-        <button data-aos="fade-up">
-          <i class="bx bxs-like bx-fade-down-hover"></i>
-          <a href={Curtis_Resume} download="curtis-resume">
-            Download My Resume
-          </a>
-        </button>
-     </AboutDiv>
+        {/* <ImgDiv><img src={circle} alt=""/></ImgDiv> */}
+        <AboutDiv>
+          <h1>About Me</h1>
+          <p data-aos="fade-left">
+            I am a creative FullStack Engineer and Self-Proclaimed genius. I
+            have always been passionate about everything related to technology
+            and IT, especially the web professions, which I made my career by
+            always giving the best of myself as a Web Developer. I also love to
+            code things from scratch, and enjoy bringing ideas to life in the
+            browser, combining the acquisition of new knowledge with independent
+            work on various projects. Aside code I love watching movies and
+            travelling to different places.
+          </p>
+          <button data-aos="fade-up">
+            <i class="bx bxs-like bx-fade-down-hover"></i>
+            <a href={Curtis_Resume} download="curtis-resume">
+              Download My Resume
+            </a>
+          </button>
+        </AboutDiv>
       </AboutSection>
-    </div>
+    </MainAbout>
   );
 }
 export default About;
+const MainAbout = styled.div`
+  padding: 100px 0;
+`;
 
 const AboutSection = styled.div`
   margin: 0 auto;
   max-width: 1240px;
   /* font-family: Montserrat, sans-serif; */
-  height: 100vh;
-  display:flex;
-  justify-content:space-between;
+  /* height: 40vh; */
+  display: flex;
+  justify-content: space-between;
   /* align-items:center; */
 `;
 const ImgDiv = styled.div`
-img{
-  width:100%;
-}
-`
-const AboutDiv =styled.div`
- a {
+  img {
+    width: 100%;
+  }
+`;
+const AboutDiv = styled.div`
+  a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
@@ -59,14 +61,14 @@ const AboutDiv =styled.div`
       color: blue;
     }
   }
-  h1{
-      font-family:lobster;
+  h1 {
+    font-family: lobster;
   }
   p {
     line-height: 2rem;
     font-family: Montserrat, sans-serif;
     margin-bottom: 3rem;
-    text-align:justify;
+    text-align: justify;
   }
   button {
     padding: 0.7rem 2rem 0.7rem 2rem;
@@ -78,7 +80,6 @@ const AboutDiv =styled.div`
     font-weight: bolder;
     font-family: Montserrat, sans-serif;
 
-
     :hover {
       border: 2px solid blue;
       background-color: transparent;
@@ -89,4 +90,4 @@ const AboutDiv =styled.div`
       outline: none;
     }
   }
-`
+`;

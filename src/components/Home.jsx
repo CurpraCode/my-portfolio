@@ -7,6 +7,7 @@ import Skill from "../components/pages/Skill";
 import Contact from "../components/pages/Contact";
 import Footer from "../components/pages/Footer";
 
+
 function Home() {
   return (
     <div>
@@ -17,6 +18,7 @@ function Home() {
       <Skill />
       <Contact />
       <Footer />
+    
     </div>
   );
 }

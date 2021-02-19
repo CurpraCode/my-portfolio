@@ -1,14 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import html from "../../assets/html.svg";
+import { ReactComponent as Css } from "../../assets/css-3.svg";
 
 function Skill() {
   return (
-    <div id="skill">
+    <MainSkill id="skill">
       <BoxSet>
-        <h2>Skills</h2>
+        <h1>Skills</h1>
         <Flex>
-          <div data-aos="zoom-out">HTML</div>
-          <div data-aos="zoom-out">CSS</div>
+          <div data-aos="zoom-out">
+                       <img src={html} alt=""/>
+                       
+          </div>
+          <div data-aos="zoom-out">
+            <Css  />
+          </div>
           <div data-aos="zoom-out">JAVASCRIPT</div>
           <div data-aos="zoom-out">REACT.JS</div>
         </Flex>
@@ -23,15 +30,21 @@ function Skill() {
           <div data-aos="zoom-out">GITHUB</div>
         </Flex>
       </BoxSet>
-    </div>
+    </MainSkill>
   );
 }
 
 export default Skill;
 
+const MainSkill = styled.div`
+  padding: 100px 0;
+`;
 const BoxSet = styled.div`
   margin: 0 auto;
   max-width: 1240px;
+  h1 {
+    font-family: lobster;
+  }
 `;
 
 const Flex = styled.div`
@@ -53,4 +66,5 @@ const Flex = styled.div`
     padding: 2rem;
     transform: scale(1);
   }
+  
 `;
