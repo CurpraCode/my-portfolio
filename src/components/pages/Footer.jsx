@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as Css } from "../../assets/css-3.svg";
+// import { ReactComponent as Css } from "../../assets/css-3.svg";
 
 function Footer() {
   return (
@@ -8,7 +8,7 @@ function Footer() {
       <FooterDiv>
         <div>
           <h2>CurtisDev</h2>
-          <p>Social Media Icons <Css/> </p>
+          <p>Social Media Icons  </p>
           <p>Design and Developed by Curtis</p>
         </div>
       </FooterDiv>

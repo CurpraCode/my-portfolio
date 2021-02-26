@@ -8,7 +8,7 @@ function About() {
   return (
     <MainAbout id="about">
       <AboutSection>
-        {/* <ImgDiv><img src={circle} alt=""/></ImgDiv> */}
+        <ImgDiv></ImgDiv>
         <AboutDiv>
           <h1>About Me</h1>
           <p data-aos="fade-left">
@@ -44,7 +44,20 @@ const AboutSection = styled.div`
   /* height: 40vh; */
   display: flex;
   justify-content: space-between;
-  /* align-items:center; */
+  align-items: center;
+  @media screen and (max-width: 10240px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 840px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 999px) {
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 const ImgDiv = styled.div`
   img {

@@ -149,7 +149,24 @@ const Section = styled.div`
   justify-content: space-between;
   align-items: center;
   font-family: Montserrat, sans-serif;
+  @media screen and (max-width: 10240px) {
+    margin-left: 70px;
+    margin-right: 70px;
+    flex:none;
+    img {
+      visibility: visible;
+    }
+  }
+  @media screen and (max-width: 890px) {
+    margin-left: 70px;
+    margin-right: 70px;
+
+    img {
+      visibility: hidden;
+    }
+  }
   /* color:black; */
+
   h3 {
     font-family: Lobster;
     font-weight: bolder;
@@ -174,6 +191,7 @@ const Section = styled.div`
     font-size: 1rem;
     margin-top: 1.2rem;
   }
+
   .react-rotating-text-cursor {
     animation: blink 1s infinite;
 

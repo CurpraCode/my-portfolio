@@ -76,10 +76,29 @@ const Body = styled.div`
   h1 {
     font-family: lobster;
   }
+  @media screen and (max-width: 10240px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 840px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 999px) {
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 const Box = styled.div`
   display: flex;
   justify-content: space-evenly;
+
+  @media screen and (max-width: 999px) {
+    flex-flow: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
 `;
 const InnerBox = styled.div`
   border: 0px;

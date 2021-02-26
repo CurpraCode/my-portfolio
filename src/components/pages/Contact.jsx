@@ -26,6 +26,19 @@ const Box = styled.div`
   margin: 0 auto;
   max-width: 1240px;
   /* height: 90vh; */
+  @media screen and (max-width: 10240px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 840px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 999px) {
+    h1 {
+      text-align: center;
+    }
+  }
   h1 {
     font-family: lobster;
   }

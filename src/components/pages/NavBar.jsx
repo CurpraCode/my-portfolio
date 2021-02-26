@@ -56,7 +56,14 @@ const Nav = styled.nav`
   margin: 0 auto;
   max-width: 1240px;
   height: 70px;
-
+  @media screen and (max-width: 10240px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 840px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
   h1 {
     font-family: Lobster;
   }

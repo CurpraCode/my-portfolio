@@ -10,11 +10,10 @@ function Skill() {
         <h1>Skills</h1>
         <Flex>
           <div data-aos="zoom-out">
-                       <img src={html} alt=""/>
-                       
+            <img src={html} alt="" />
           </div>
           <div data-aos="zoom-out">
-            <Css  />
+            <Css />
           </div>
           <div data-aos="zoom-out">JAVASCRIPT</div>
           <div data-aos="zoom-out">REACT.JS</div>
@@ -45,6 +44,19 @@ const BoxSet = styled.div`
   h1 {
     font-family: lobster;
   }
+  @media screen and (max-width: 10240px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 840px) {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+  @media screen and (max-width: 999px) {
+    h1 {
+      text-align: center;
+    }
+  }
 `;
 
 const Flex = styled.div`
@@ -66,5 +78,4 @@ const Flex = styled.div`
     padding: 2rem;
     transform: scale(1);
   }
-  
 `;
