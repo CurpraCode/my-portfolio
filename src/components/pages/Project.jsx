@@ -12,7 +12,7 @@ function Project() {
         <Box>
           <InnerBox data-aos="zoom-in">
             <div>
-              <img src={calc} alt="" />
+              <img src={calc} alt="calc" />
             </div>
             <div className="detail-card">
               <h2>JAVASCRIPT UI-CALCULATOR</h2>
@@ -21,14 +21,14 @@ function Project() {
                 is also responsive to mobile view
               </p>
             </div>
-            <a href="">
+            <a href="h">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
 
           <InnerBox data-aos="zoom-in">
             <div>
-              <img src={movieapi} alt="" />
+              <img src={movieapi} alt="movie" />
             </div>
             <div className="detail-card">
               <h2>MOVIE API WEBSITE</h2>
@@ -38,14 +38,14 @@ function Project() {
                 view.
               </p>
             </div>
-            <a href="">
+            <a href="h">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
 
           <InnerBox data-aos="zoom-in">
             <div>
-              <img src="" alt="" />
+              <img src="" alt="curtis" />
             </div>
             <div className="detail-card">
               <h2>CurtisDev</h2>
@@ -54,7 +54,7 @@ function Project() {
                 react.js, styled-components
               </p>
             </div>
-            <a href="">
+            <a href="h">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
