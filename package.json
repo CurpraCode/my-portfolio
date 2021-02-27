@@ -10,8 +10,8 @@
     "boxicons": "^2.0.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-rotating-text": "^1.4.1",
     "react-scripts": "4.0.2",
-    "scrollreveal": "^4.0.7",
     "styled-components": "^5.2.1",
     "web-vitals": "^0.2.4"
   },
