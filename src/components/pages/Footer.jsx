@@ -8,8 +8,58 @@ function Footer() {
       <FooterDiv>
         <div>
           <h2>CurtisDev</h2>
-          <p>Social Media Icons </p>
-          <p>Design and Developed by Curtis</p>
+          <p>
+            {" "}
+            <a
+              href="https://web.facebook.com/curtis.ayoposi.3/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                name="facebook"
+                type="logo"
+                size="md"
+                color="#4b4bff"
+              ></box-icon>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCU_r3L-K7rw0As7J8K2Zt6g"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                type="logo"
+                name="youtube"
+                size="md"
+                color="#4b4bff"
+              ></box-icon>
+            </a>
+            <a
+              href="https://twitter.com/CurpraCode"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                name="twitter"
+                type="logo"
+                size="md"
+                color="#4b4bff"
+              ></box-icon>
+            </a>
+            <a
+              href="https://www.instagram.com/curpra_code/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <box-icon
+                name="instagram"
+                type="logo"
+                size="md"
+                color="#4b4bff"
+              ></box-icon>
+            </a>{" "}
+          </p>
+          <P>Design and Developed by Curtis</P>
         </div>
       </FooterDiv>
     </FooterPage>
@@ -32,6 +82,20 @@ const FooterDiv = styled.div`
   /* width: 100%; */
 
   div {
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
+  h2 {
+    font-family: lobster;
+    margin-bottom: 1.5rem;
+  }
+  p a {
+    margin-left: 1.5rem;
+  }
+  p {
+    margin-bottom: 1.5rem;
+  }
+ 
 `;
+const P=styled.p`
+ font-family: lobster;
+`

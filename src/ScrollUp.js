@@ -60,6 +60,9 @@ const ScrollToUp = styled.div`
   right: 5.5rem;
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
+  @media screen and (max-width: 590px){
+    right:1rem;
+  }
 
   @keyframes fadeIn {
     from {
