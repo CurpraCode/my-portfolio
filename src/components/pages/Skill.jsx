@@ -88,6 +88,7 @@ const BoxSet = styled.div`
   max-width: 1240px;
   h1 {
     font-family: lobster;
+    margin-bottom: 2rem;
   }
 
   @media screen and (max-width: 1024px) {

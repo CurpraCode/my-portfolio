@@ -141,15 +141,21 @@ const Main = styled.div`
 const Section = styled.div`
   margin: 0 auto;
   max-width: 1240px;
-  width: 100%;
   display: flex;
+  overflow-x:hidden;
   justify-content: space-between;
   align-items: center;
   font-family: Montserrat, sans-serif;
+  /* margin-left: 70px !important; */
+  /* margin-right: 70px; */
+ 
   @media screen and (max-width: 1024px) {
     margin-left: 70px !important;
     margin-right: 70px !important;
     flex: none;
+    div:nth child(2){
+      display:none;
+    }
     img {
       visibility: visible;
     }
@@ -164,21 +170,24 @@ const Section = styled.div`
   }
 
   @media screen and (max-width: 590px) {
+    h3{
+      margin-top:1rem  !important;
+    }
     p {
-      font-size: 0.8rem !important;
+      font-size: 0.9rem !important;
     }
     h1 {
-      font-size: 1.4rem !important;
+      font-size: 1.3rem !important;
       font-weight: bolder !important;
-      /* margin-top:1rem; */
+      margin-top:1.5rem !important;
     }
     button {
       font-size: 0.7rem !important;
     }
   }
   @media screen and (max-width: 590px) {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 20px !important;
+    margin-right: 70px !important;
     .social-body {
       margin-top: 3rem !important;
     }
@@ -206,9 +215,9 @@ const Section = styled.div`
   }
   p {
     font-family: Montserrat, sans-serif;
-    line-height: 2rem !important;
-    font-size: 1.3rem !important;
-    margin-top: 1.2rem !important;
+    line-height: 2rem ;
+    font-size: 1.3rem ;
+    margin-top: 1.2rem ;
   }
 
   .react-rotating-text-cursor {

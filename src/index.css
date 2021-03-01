@@ -10,9 +10,12 @@ body {
 }
 *{
   box-sizing: border-box;
+  padding:0px;
+  margin:0px;
 }
-html{
+html body{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 code {

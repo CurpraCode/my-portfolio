@@ -60,7 +60,7 @@ const AboutSection = styled.div`
   }
   @media screen and (max-width: 590px) {
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right:20px;
   }
   @media screen and (max-width: 350px) {
     a {
@@ -85,6 +85,7 @@ const AboutDiv = styled.div`
   }
   h1 {
     font-family: lobster;
+    margin-bottom: 2rem;
   }
   p {
     line-height: 2rem;

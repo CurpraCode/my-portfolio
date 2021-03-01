@@ -75,6 +75,7 @@ const Body = styled.div`
  
   h1 {
     font-family: lobster;
+    margin-bottom: 2rem;
   }
   @media screen and (max-width: 1024px) {
     margin-left: 70px;

@@ -35,7 +35,7 @@ function NavBar() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        {/* <button>Dark/Light mode</button> */}
+        
       </Nav>
     </Header>
   );
@@ -48,13 +48,13 @@ const Header = styled.div`
   position: fixed;
   width: 100%;
   z-index: 10;
+  overflow-x:hidden;
   top: 0;
-  /* left: 0;
-  right: 0; */
+ 
   margin-bottom: 50px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  /* bottom:0; */
+  
 `;
 const Nav = styled.nav`
   display: flex;
@@ -69,15 +69,13 @@ const Nav = styled.nav`
   }
   @media screen and (max-width: 590px) {
     margin-left: 20px !important;
-    margin-right: 20px !important;
-  }
-  @media screen and (max-width: 590px) {
-    margin-left: 20px !important;
     margin-right: 70px !important;
+    
   }
+ 
   @media screen and (max-width: 840px) {
-    margin-left: 70px !important;
-    margin-right: 70px !important;
+    margin-left: 70px ;
+    margin-right: 70px;
     ul {
       position: absolute;
       width: 100%;

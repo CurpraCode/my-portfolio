@@ -6,11 +6,18 @@ function Contact() {
     <ContactDiv id="contact">
       <Box>
         <h1>Contact Me</h1>
-        <Form data-aos="fade-up">
-          <input type="text" placeholder="Name" required /> <br />
-          <input type="text" placeholder="Email" required /> <br />
+        <Form
+          name="contact"
+          data-aos="fade-up"
+          method="POST"
+          netlify
+          netlify-honeypot="bot-field"
+        >
+          <input type="text" placeholder="Name" name="name" required /> <br />
+          <input type="email" placeholder="Email" name="email" required />{" "}
+          <br />
           <input type="text" placeholder="Subject" required /> <br />
-          <textarea placeholder="Message" />
+          <textarea placeholder="Message" name="message" />
           <button type="submit">SUBMIT</button>
         </Form>
       </Box>
@@ -41,6 +48,7 @@ const Box = styled.div`
   }
   h1 {
     font-family: lobster;
+    margin-bottom: 2rem;
   }
   @media screen and (max-width: 590px) {
     margin-left: 20px;

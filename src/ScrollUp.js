@@ -57,7 +57,7 @@ const Button = styled.button`
 const ScrollToUp = styled.div`
   position: fixed;
   bottom: 0.5rem;
-  right: 0.5rem;
+  right: 5.5rem;
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
 
