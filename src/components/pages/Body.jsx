@@ -136,12 +136,9 @@ export default Body;
 
 const Main = styled.div`
   padding: 100px 0;
-  /* margin-top: 150px; */
-  /* height: 100vh; */
 `;
 
 const Section = styled.div`
-  /* margin-top: 90px; */
   margin: 0 auto;
   max-width: 1240px;
   width: 100%;
@@ -149,23 +146,43 @@ const Section = styled.div`
   justify-content: space-between;
   align-items: center;
   font-family: Montserrat, sans-serif;
-  @media screen and (max-width: 10240px) {
-    margin-left: 70px;
-    margin-right: 70px;
-    flex:none;
+  @media screen and (max-width: 1024px) {
+    margin-left: 70px !important;
+    margin-right: 70px !important;
+    flex: none;
     img {
       visibility: visible;
     }
   }
   @media screen and (max-width: 890px) {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 70px !important;
+    margin-right: 70px !important;
 
     img {
-      visibility: hidden;
+      display: none;
     }
   }
-  /* color:black; */
+
+  @media screen and (max-width: 590px) {
+    p {
+      font-size: 0.8rem !important;
+    }
+    h1 {
+      font-size: 1.4rem !important;
+      font-weight: bolder !important;
+      /* margin-top:1rem; */
+    }
+    button {
+      font-size: 0.7rem !important;
+    }
+  }
+  @media screen and (max-width: 590px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    .social-body {
+      margin-top: 3rem !important;
+    }
+  }
 
   h3 {
     font-family: Lobster;
@@ -176,6 +193,7 @@ const Section = styled.div`
     color: #4b4bff;
   }
   h1 {
+    font-family: Montserrat, sans-serif;
     font-size: 2.3rem;
     font-weight: bolder;
     /* margin-top:1rem; */
@@ -187,9 +205,10 @@ const Section = styled.div`
     margin-right: 20px;
   }
   p {
-    line-height: 2rem;
-    font-size: 1rem;
-    margin-top: 1.2rem;
+    font-family: Montserrat, sans-serif;
+    line-height: 2rem !important;
+    font-size: 1.3rem !important;
+    margin-top: 1.2rem !important;
   }
 
   .react-rotating-text-cursor {

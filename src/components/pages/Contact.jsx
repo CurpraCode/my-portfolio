@@ -26,7 +26,7 @@ const Box = styled.div`
   margin: 0 auto;
   max-width: 1240px;
   /* height: 90vh; */
-  @media screen and (max-width: 10240px) {
+  @media screen and (max-width: 1024px) {
     margin-left: 70px;
     margin-right: 70px;
   }
@@ -41,6 +41,10 @@ const Box = styled.div`
   }
   h1 {
     font-family: lobster;
+  }
+  @media screen and (max-width: 590px) {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 `;
 

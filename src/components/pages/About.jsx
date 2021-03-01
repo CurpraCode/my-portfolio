@@ -45,7 +45,7 @@ const AboutSection = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (max-width: 10240px) {
+  @media screen and (max-width: 1024px) {
     margin-left: 70px;
     margin-right: 70px;
   }
@@ -56,6 +56,15 @@ const AboutSection = styled.div`
   @media screen and (max-width: 999px) {
     h1 {
       text-align: center;
+    }
+  }
+  @media screen and (max-width: 590px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media screen and (max-width: 350px) {
+    a {
+      font-size: 0.8rem !important;
     }
   }
 `;

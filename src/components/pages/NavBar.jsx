@@ -10,6 +10,13 @@ function NavBar() {
           {" "}
           <span></span> <a href="/"> CurtisDev</a> <span> </span>{" "}
         </h1>
+        <label class="menuBox" for="bars">
+          <div class="menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </label>
         <ul>
           <li>
             {" "}
@@ -28,7 +35,7 @@ function NavBar() {
             <a href="#contact">Contact</a>
           </li>
         </ul>
-        <button>Dark/Light mode</button>
+        {/* <button>Dark/Light mode</button> */}
       </Nav>
     </Header>
   );
@@ -56,13 +63,48 @@ const Nav = styled.nav`
   margin: 0 auto;
   max-width: 1240px;
   height: 70px;
-  @media screen and (max-width: 10240px) {
+  @media screen and (max-width: 1024px) {
     margin-left: 70px;
     margin-right: 70px;
   }
+  @media screen and (max-width: 590px) {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+  @media screen and (max-width: 590px) {
+    margin-left: 20px !important;
+    margin-right: 70px !important;
+  }
   @media screen and (max-width: 840px) {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 70px !important;
+    margin-right: 70px !important;
+    ul {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(48, 5, 48);
+      z-index: 998;
+      top: -100vh;
+      left: 50%;
+      transform: translate(-50%, -100vh);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transition: 0.5s;
+    }
+
+    li {
+      width: 100%;
+      padding: 45px 0;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+      transition: 0.5s;
+    }
+    li:nth-child(1) {
+      margin-top: 50px;
+    }
   }
   h1 {
     font-family: Lobster;

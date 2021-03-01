@@ -96,6 +96,9 @@ const SvgCenter = styled.svg`
   left: 50%;
   transform: translate(-50%, -50%);
   animation: fill 0.5s ease forwards 5s;
+  @media screen and (max-width: 450px){
+    width:65%;
+  }
 
   path:nth-child(1) {
     stroke-dasharray: 508px;
