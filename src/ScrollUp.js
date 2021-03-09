@@ -45,8 +45,9 @@ export default function ScrollToTop() {
 }
 
 const Button = styled.button`
-  background-color: rgba(146, 207, 250, 0.96);;
+  background-color: rgba(146, 207, 250, 0.96);
   border: 0px;
+  z-index: 1000;
   border-radius: 15px;
   padding: 1rem 0.8rem 0.1rem 0.8rem;
 
@@ -60,8 +61,8 @@ const ScrollToUp = styled.div`
   right: 5.5rem;
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
-  @media screen and (max-width: 590px){
-    right:1rem;
+  @media screen and (max-width: 590px) {
+    right: 1rem;
   }
 
   @keyframes fadeIn {

@@ -71,6 +71,7 @@ const Form = styled.div`
     margin-bottom: 15px;
     border-radius: 9px;
     padding-left: 10px;
+    border: 1px solid;
     /* padding-top: 10px; */
   }
   textarea {
@@ -78,6 +79,7 @@ const Form = styled.div`
     height: 120px;
     font-size: 20px;
     margin-bottom: 15px;
+    border: 1px solid;
     border-radius: 9px;
     resize: none;
     padding-left: 10px;
