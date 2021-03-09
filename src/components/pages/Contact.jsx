@@ -7,12 +7,17 @@ function Contact() {
       <Box>
         <h1>Contact Me</h1>
         <Form
-          name="contact"
+          name="contact v1"
           data-aos="fade-up"
           method="POST"
-          netlify
+          data-netlify="true"
+          onSubmit="submit"
           netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact v1" />
+          <div hidden>
+            <input name="bot-field" />
+          </div>
           <input type="text" placeholder="Name" name="name" required /> <br />
           <input type="email" placeholder="Email" name="email" required />{" "}
           <br />

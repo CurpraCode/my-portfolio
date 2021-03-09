@@ -136,6 +136,7 @@ export default Body;
 
 const Main = styled.div`
   padding: 100px 0;
+  overflow-x:hidden;
 `;
 
 const Section = styled.div`

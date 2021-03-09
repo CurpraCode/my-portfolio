@@ -12,9 +12,9 @@ function NavBar() {
         </h1>
         <label class="menuBox" for="bars">
           <div class="menu">
-            <div></div>
-            <div></div>
-            <div></div>
+            <MenuBar></MenuBar>
+            <MenuBar></MenuBar>
+            <MenuBar></MenuBar>
           </div>
         </label>
         <ul>
@@ -56,7 +56,14 @@ const Header = styled.div`
   border-bottom-right-radius: 40px;
   
 `;
+const MenuBar=styled.div`
+ margin-bottom:5px;
+        width:30px;
+        height:3px;
+        border-radius:15px;
+        background-color:white`
 const Nav = styled.nav`
+overflow-x:hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
