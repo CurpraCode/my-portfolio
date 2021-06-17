@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import curtis from "../../assets/curtis.jpg";
+import avatar1 from "../../assets/avatar1.png";
 import ReactRotatingText from "react-rotating-text";
 import "boxicons";
 
@@ -125,7 +125,7 @@ function Body() {
           </div>
         </div>
         <div data-aos="fade-right">
-          <img src={curtis} alt="my pics here" />
+          <img src={avatar1} alt="my pics here" />
         </div>
       </Section>
     </Main>

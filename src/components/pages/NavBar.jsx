@@ -10,7 +10,6 @@ function NavBar() {
           {" "}
           <span></span> <a href="/"> CurtisDev</a> <span> </span>{" "}
         </h1>
-
         <Hamburger />
       </Nav>
     </Header>
@@ -24,16 +23,14 @@ const Header = styled.div`
   position: fixed;
   width: 100%;
   z-index: 10;
-  overflow-x: hidden;
   top: 0;
-
   margin-bottom: 50px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 `;
 
 const Nav = styled.nav`
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   display: flex;
   justify-content: space-between;
   align-items: center;
