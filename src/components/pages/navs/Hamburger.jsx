@@ -16,9 +16,13 @@ function Hamburger() {
   );
 }
 const Burger = styled.div`
-  width: 2rem;
+  width: 10%;
   height: 2rem;
   position: fixed;
+  background-color: #f9f9f9;
+    box-shadow: -9.1159px -18.2318px 24.3091px #fff, 9.1159px 18.2318px 24.3091px #eceef1;
+    /* padding:0.7rem; */
+    border-radius: 12.8028px;
   top: 15px;
   right: 50px;
   z-index: 20;
@@ -31,7 +35,7 @@ const Burger = styled.div`
     flex-flow: column nowrap;
   }
   div {
-    width: 1.9rem;
+    width: 1.4rem;
     height: 0.2rem;
     border-radius: 10px;
     position:${({open})=>(open ? "absolute" : "unset")};

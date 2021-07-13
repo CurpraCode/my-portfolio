@@ -29,6 +29,8 @@ function Navlinks({open}) {
 export default Navlinks;
 
 const NavLink=styled.ul`
+background-color: #f9f9f9;
+    box-shadow: -9.1159px -18.2318px 24.3091px #fff, 9.1159px 18.2318px 24.3091px #eceef1;
     display: flex;
     justify-content: space-between;
     align-items: center;
