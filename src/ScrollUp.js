@@ -36,7 +36,7 @@ export default function ScrollToTop() {
             type="regular"
             size="md"
             animation="fade-up"
-            color="black"
+            color="#ffffff"
           ></box-icon>
         </Button>
       )}
@@ -45,11 +45,12 @@ export default function ScrollToTop() {
 }
 
 const Button = styled.button`
-  background-color: rgba(146, 207, 250, 0.96);
+   background-color:  rgba(67, 172, 247, 0.96);
+    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;
   border: 0px;
   z-index: 1000;
-  border-radius: 15px;
-  padding: 1rem 0.8rem 0.1rem 0.8rem;
+  border-radius: 1.1rem;
+  padding: 0.8rem 0.5rem 0rem 0.5rem;
 
   :focus {
     outline: none;

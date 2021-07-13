@@ -1,5 +1,5 @@
 import React from "react";
-
+import styled from "styled-components";
 import About from "../components/pages/About";
 import NavBar from "../components/pages/NavBar";
 import Body from "../components/pages/Body";
@@ -13,7 +13,7 @@ function Home() {
  
   return (
    
-    <div>
+    <BG>
       <NavBar />
       <Body />
       <About />
@@ -22,8 +22,12 @@ function Home() {
       <Contact />
       <Footer />
     
-    </div>
+    </BG>
    
   );
 }
 export default Home;
+
+const BG = styled.div`
+  background-color: rgb(244,246,246);
+  `

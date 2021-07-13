@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+
 }
 html body {
   scroll-behavior: smooth;
@@ -24,9 +25,9 @@ html body {
   border: none;
 } */
 ::-webkit-scrollbar-thumb {
-  background-color: #4b4bff;
+  background-color: rgba(67, 172, 247, 0.96);
   border-radius: 10px;
-  height: 30px;
+  height: 50px;
   transition: 0.3s;
 }
 ::-webkit-scrollbar-thumb:hover {

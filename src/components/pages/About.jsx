@@ -21,12 +21,14 @@ function About() {
             work on various projects. Aside code I love watching movies and
             travelling to different places.
           </p>
-          <button data-aos="fade-up">
-            <i class="bx bxs-like bx-fade-down-hover"></i>
+         
+            {/* <i class="bx bxs-like bx-fade-down-hover"></i> */}
             <a href={Curtis_Resume} download="curtis-resume">
+            <button data-aos="fade-up">
               Download My Resume
+              </button>
             </a>
-          </button>
+         
         </AboutDiv>
       </AboutSection>
     </MainAbout>
@@ -79,9 +81,7 @@ const AboutDiv = styled.div`
     color: white;
     font-weight: bolder;
     font-size: 1.1rem;
-    :hover {
-      color: blue;
-    }
+   
   }
   h1 {
     font-family: lobster;
@@ -96,18 +96,19 @@ const AboutDiv = styled.div`
   button {
     padding: 0.7rem 2rem 0.7rem 2rem;
     color: white;
-    background-color: #4b4bff;
-    border: 0px;
+    background-color:  rgba(67, 172, 247, 0.96);
+    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;    border: 0px;
+    border-radius:3rem;
     letter-spacing: 0.1rem;
     font-size: 1rem;
     font-weight: bolder;
     font-family: Montserrat, sans-serif;
 
     :hover {
-      border: 2px solid blue;
+      border:2px solid rgba(67, 172, 247, 0.96);
       background-color: transparent;
       transition: 0.3s;
-      color: #4b4bff;
+      color: rgba(67, 172, 247, 0.96);
     }
     :focus {
       outline: none;

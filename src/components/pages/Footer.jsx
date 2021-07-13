@@ -19,7 +19,7 @@ function Footer() {
                 name="facebook"
                 type="logo"
                 size="md"
-                color="#4b4bff"
+                color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
             </a>
             <a
@@ -31,7 +31,7 @@ function Footer() {
                 type="logo"
                 name="youtube"
                 size="md"
-                color="#4b4bff"
+                color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
             </a>
             <a
@@ -43,7 +43,7 @@ function Footer() {
                 name="twitter"
                 type="logo"
                 size="md"
-                color="#4b4bff"
+                color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
             </a>
             <a
@@ -55,7 +55,7 @@ function Footer() {
                 name="instagram"
                 type="logo"
                 size="md"
-                color="#4b4bff"
+                color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
             </a>{" "}
           </p>
@@ -68,7 +68,7 @@ function Footer() {
 export default Footer;
 
 const FooterPage = styled.div`
-  background-color: rgb(255, 255, 255);
+ background-color: rgb(244,246,246);
   box-shadow: 0px -4px 3px 0px rgb(146 207 250 / 96%);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -81,8 +81,24 @@ const FooterDiv = styled.div`
   margin-top: 2rem;
   /* width: 100%; */
 
+  @media screen and (max-width: 1024px) {
+    margin-left: 70px !important;
+    margin-right: 70px !important;
+  }
+  @media screen and (max-width: 890px) {
+    margin-left: 70px !important;
+    margin-right: 70px !important;
+  }
+  @media screen and (min-width: 690px) {
+   div{ margin-left: 70px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+  }
   div {
     padding-top: 2rem;
+    
   }
   h2 {
     font-family: lobster;
@@ -94,8 +110,8 @@ const FooterDiv = styled.div`
   p {
     margin-bottom: 1.5rem;
   }
- 
 `;
-const P=styled.p`
- font-family: lobster;
-`
+
+const P = styled.p`
+  font-family: lobster;
+`;

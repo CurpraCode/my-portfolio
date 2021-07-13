@@ -18,7 +18,7 @@ function NavBar() {
 export default NavBar;
 
 const Header = styled.div`
-  background-color: rgb(255, 255, 255);
+ background-color: rgb(244,246,246);
   box-shadow: -1px 4px 3px 0px rgb(146 207 250 / 96%);
   position: fixed;
   width: 100%;

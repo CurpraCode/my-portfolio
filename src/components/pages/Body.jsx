@@ -71,12 +71,12 @@ function Body() {
             </span>
           </h1>
           <p>
-            I build web experience and awesome web app, i solve variant <br />
-            web problem and also write code to make things works
+            I build web experience and awesome web app, <br /> i solve variant 
+            web problem and also write code <br /> to make things works
           </p>
 
           <a
-            href="https://wa.me/23409097297157?text=HELLO%20CURPRA%20CODE,%20%20PLEASE%20I%20NEED%20WEBSITE%20OR%20WEB-APP%20"
+            href="https://wa.me/23408032347546?text=HELLO%20CURPRA%20CODE,%20%20PLEASE%20I%20NEED%20WEBSITE%20OR%20WEB-APP%20"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -93,7 +93,7 @@ function Body() {
                 type="logo"
                 size="lg"
                 animation="spin-hover"
-                color="#4b4bff"
+                color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
             </a>
             <a
@@ -106,7 +106,7 @@ function Body() {
                 name="linkedin"
                 size="lg"
                 animation="spin-hover"
-                color="#4b4bff"
+                color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
             </a>
             <a
@@ -119,7 +119,7 @@ function Body() {
                 type="logo"
                 size="lg"
                 animation="spin-hover"
-                color="#4b4bff"
+                color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
             </a>
           </div>
@@ -198,15 +198,16 @@ const Section = styled.div`
     font-family: Lobster;
     font-weight: bolder;
     font-size: 1.3rem;
+    margin-top:1rem;
   }
   span {
-    color: #4b4bff;
+    color: rgba(67, 172, 247, 0.96);;
   }
   h1 {
     font-family: Montserrat, sans-serif;
     font-size: 2.3rem;
     font-weight: bolder;
-    /* margin-top:1rem; */
+    margin-top:1rem;
   }
   img {
     width: 85%;
@@ -242,8 +243,10 @@ const Section = styled.div`
   button {
     padding: 0.7rem 2rem 0.7rem 2rem;
     color: white;
-    background-color: #4b4bff;
+    background-color:  rgba(67, 172, 247, 0.96);
+    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;
     border: 0px;
+    border-radius:3rem;
     font-family: Montserrat, sans-serif;
     font-size: 0.85rem;
     font-weight: bolder;
@@ -251,12 +254,11 @@ const Section = styled.div`
     margin-top: 1rem;
 
     :hover {
-      border: 2px solid #3434f3;
+      border: 2px solid rgba(67, 172, 247, 0.96);
       background-color: transparent;
-      transition: 0.1s;
-      color: #3939fd;
-      font-size: 1.1rem;
-      transform: scale(0.9);
+      transition: 0.3s;
+      color: rgba(67, 172, 247, 0.96);
+      
     }
     :focus {
       outline: none;

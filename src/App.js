@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Home from "./components/Home";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css';
 import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -19,8 +21,14 @@ function App() {
     <>
       {loading === false ? (
         <div className="App">
-          <Home />
-          <ScrollUp />
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+                <ScrollUp />
+              </Route>
+            </Switch>
+          </Router>
         </div>
       ) : (
         <Preloader />

@@ -29,7 +29,6 @@ function Navlinks({open}) {
 export default Navlinks;
 
 const NavLink=styled.ul`
- background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;

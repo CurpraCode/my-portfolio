@@ -21,7 +21,7 @@ function Project() {
                 is also responsive to mobile view
               </p>
             </div>
-            <a href="h">
+            <a href="https://curpra-calc.netlify.app/">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
@@ -38,7 +38,7 @@ function Project() {
                 view.
               </p>
             </div>
-            <a href="h">
+            <a href="https://movieapicurpra.netlify.app/">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
@@ -54,7 +54,7 @@ function Project() {
                 react.js, styled-components
               </p>
             </div>
-            <a href="h">
+            <a href="https://curtisdev.netlify.app/">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
@@ -109,21 +109,38 @@ const InnerBox = styled.div`
   border: 0px;
   margin: 1rem;
   flex: 1;
-  box-shadow: 0px 7px 8px 0px rgba(146, 207, 250, 0.96);
+  border-radius:2rem;
+  border-radius: 12.8028px;
+    background-color: #f9f9f9;
+    box-shadow: -9.1159px -18.2318px 24.3091px #fff, 9.1159px 18.2318px 24.3091px #eceef1;
+    width: 100%;
+
+  /* :hover{
+    box-shadow: -15px 6px 26px 6px rgba(0,0,0,0.26);
+-webkit-box-shadow: -15px 6px 26px 6px rgba(0,0,0,0.26);
+-moz-box-shadow: -15px 6px 26px 6px rgba(0,0,0,0.26);
+  } */
 
   img {
     width: 100%;
+    border-radius:5rem;
   }
   .detail-card {
     padding: 1rem;
+    text-align:center;
   }
   button {
     border: 0px;
-    background-color: blue;
-    padding: 0.99rem;
+    background-color:  rgba(67, 172, 247, 0.96);
+    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;
+    padding: 0.99rem 1.2rem;
     color: white;
+    border-radius:2rem;
+    display:flex;
+    justify-content:space-between;
   }
   a {
     text-decoration: none;
   }
+  
 `;
