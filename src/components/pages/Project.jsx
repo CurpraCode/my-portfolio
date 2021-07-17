@@ -103,8 +103,8 @@ const Box = styled.div`
     flex-flow: wrap;
     align-items: center;
     flex-direction: column;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
 `;
 const InnerBox = styled.div`
