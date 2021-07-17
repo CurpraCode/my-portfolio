@@ -24,13 +24,14 @@ const Header = styled.div`
   width: 100%;
   z-index: 10;
   top: 0;
+  overflow: hidden;
   margin-bottom: 50px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 `;
 
 const Nav = styled.nav`
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -16,7 +16,7 @@ function Project() {
             </div>
             <div className="detail-card">
               <h2>JAVASCRIPT UI-CALCULATOR</h2>
-              <p>
+              <p> 
                 This UI calculator was built with HTML, CSS AND JavaScript, it
                 is also responsive to mobile view
               </p>
@@ -114,16 +114,13 @@ const InnerBox = styled.div`
     background-color: #f9f9f9;
     box-shadow: -9.1159px -18.2318px 24.3091px #fff, 9.1159px 18.2318px 24.3091px #eceef1;
     width: 100%;
-
-  /* :hover{
-    box-shadow: -15px 6px 26px 6px rgba(0,0,0,0.26);
--webkit-box-shadow: -15px 6px 26px 6px rgba(0,0,0,0.26);
--moz-box-shadow: -15px 6px 26px 6px rgba(0,0,0,0.26);
-  } */
+text-align:center;
+padding: 2rem 1rem;
+  
 
   img {
-    width: 100%;
-    border-radius:5rem;
+    width: 50%;
+    border-radius:45rem;
   }
   .detail-card {
     padding: 1rem;
@@ -136,11 +133,18 @@ const InnerBox = styled.div`
     padding: 0.99rem 1.2rem;
     color: white;
     border-radius:2rem;
-    display:flex;
-    justify-content:space-between;
-  }
+    margin-bottom: 1rem;
+  } 
   a {
     text-decoration: none;
   }
-  
+  p{
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  h2{
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  }
 `;
