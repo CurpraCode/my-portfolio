@@ -113,13 +113,15 @@ const Flex = styled.div`
   @media screen and (max-width: 840px) {
     flex-flow: wrap;
     justify-content: space-around;
-    /* margin: 30px; */
   }
 
   div {
+    background-color: ${props=>props.theme.cardColor};
     border-bottom: 5px solid rgba(146, 207, 250, 0.96);
     border-bottom-left-radius: 150px;
     border-bottom-right-radius: 150px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
     padding: 2rem;
   }
   div:hover {

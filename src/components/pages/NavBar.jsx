@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Hamburger from "../pages/navs/Hamburger";
 
-function NavBar() {
+function NavBar({icons, change}) {
+
   return (
     <Header>
       <Nav>
@@ -10,7 +11,13 @@ function NavBar() {
           {" "}
           <span></span> <a href="/"> CurtisDev</a> <span> </span>{" "}
         </h1>
-        <Hamburger />
+     <div className="btn-toggle">
+     <Hamburger />
+        <Toggle onClick={change}>
+  {icons}
+</Toggle>
+     </div>
+        
       </Nav>
     </Header>
   );
@@ -18,7 +25,7 @@ function NavBar() {
 export default NavBar;
 
 const Header = styled.div`
- background-color: rgb(244,246,246);
+ background-color: ${props=>props.theme.pageBackground};
   box-shadow: -1px 4px 3px 0px rgb(146 207 250 / 96%);
   position: fixed;
   width: 100%;
@@ -38,6 +45,11 @@ const Nav = styled.nav`
   margin: 0 auto;
   max-width: 1240px;
   height: 70px;
+  .btn-toggle{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+  }
   @media screen and (max-width: 1024px) {
     margin-left: 70px;
     margin-right: 70px;
@@ -45,30 +57,34 @@ const Nav = styled.nav`
   @media screen and (max-width: 590px) {
     margin-left: 20px !important;
     margin-right: 70px !important;
-  }
+     }
 
   @media screen and (max-width: 840px) {
     margin-left: 70px;
     margin-right: 70px;
- 
-
-    /* li {
-      width: 100%;
-      padding: 45px 0;
-      text-align: center;
-      align-items: center;
-      justify-content: space-around;
-      transition: 0.5s;
-    }
-    li:nth-child(1) {
-      margin-top: 50px;
-    } */
   }
   h1 {
     font-family: Lobster;
+   color: ${props=>props.theme.titleColor};
   }
   a {
     text-decoration: none;
-    color: black;
+    color: ${props=>props.theme.titleColor};
   }
+  
 `;
+const Toggle=styled.button`
+cursor:pointer;
+height:35px;
+width:35px;
+border-radius:0.7rem;
+border:none;
+color: ${props=>props.theme.pageBackground};
+&:focus{
+  outline:none
+}
+transition: all .5 ease;
+@media screen and (max-width: 790px) {
+   margin-right:4rem
+     }
+`

@@ -76,6 +76,11 @@ const ImgDiv = styled.div`
   }
 `;
 const AboutDiv = styled.div`
+@media screen and (max-width: 590px) {
+    p{
+    font-size:0.8rem;
+    }
+  }
   a {
     text-decoration: none;
     color: white;
@@ -89,7 +94,7 @@ const AboutDiv = styled.div`
   }
   p {
     line-height: 2rem;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin-bottom: 3rem;
     text-align: justify;
   }
@@ -102,7 +107,7 @@ const AboutDiv = styled.div`
     letter-spacing: 0.1rem;
     font-size: 1rem;
     font-weight: bolder;
-    font-family: Montserrat, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 
     :hover {
       border:2px solid rgba(67, 172, 247, 0.96);

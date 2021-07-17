@@ -34,8 +34,8 @@ const NavLink=styled.ul`
     align-items: center;
     
 @media screen and (max-width: 780px) {  
-  background-color: #f9f9f9;
-    box-shadow: -9.1159px -18.2318px 24.3091px #fff, 9.1159px 18.2318px 24.3091px #eceef1;
+  background-color: ${props=>props.theme.cardColor};
+    box-shadow: ${props=>props.theme.cardShadow};
  
   flex-flow: column nowrap;
   position: fixed;
@@ -53,17 +53,16 @@ const NavLink=styled.ul`
   li {
     list-style-type: none;
     padding: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
+    color:${props=>props.theme.titleColor};
   }
   li a {
-    text-decoration: none;
-    color: black;
+    color:${props=>props.theme.titleColor};
     letter-spacing: 1.5px;
-    opacity: 0.7;
+    font-family: 'Space Grotesk', sans-serif;
   }
   a {
     text-decoration: none;
-    color: black;
   }
   li:hover {
     border-bottom: 5px solid rgba(146, 207, 250, 0.96);

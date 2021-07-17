@@ -71,7 +71,7 @@ function Body() {
             </span>
           </h1>
           <p>
-            I build web experience and awesome web app, <br /> i solve variant 
+            I build web experience and awesome web app, <br /> i solve variant
             web problem and also write code <br /> to make things works
           </p>
 
@@ -91,7 +91,7 @@ function Body() {
               <box-icon
                 name="github"
                 type="logo"
-                size="lg"
+                size="md"
                 animation="spin-hover"
                 color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
@@ -104,7 +104,7 @@ function Body() {
               <box-icon
                 type="logo"
                 name="linkedin"
-                size="lg"
+                size="md"
                 animation="spin-hover"
                 color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
@@ -117,7 +117,7 @@ function Body() {
               <box-icon
                 name="twitter"
                 type="logo"
-                size="lg"
+                size="md"
                 animation="spin-hover"
                 color="rgba(67, 172, 247, 0.96)"
               ></box-icon>
@@ -136,26 +136,26 @@ export default Body;
 
 const Main = styled.div`
   padding: 100px 0;
-  overflow-x:hidden;
+  overflow-x: hidden;
 `;
 
 const Section = styled.div`
   margin: 0 auto;
   max-width: 1240px;
   display: flex;
-  overflow-x:hidden;
+  overflow-x: hidden;
   justify-content: space-between;
   align-items: center;
   font-family: Montserrat, sans-serif;
   /* margin-left: 70px !important; */
   /* margin-right: 70px; */
- 
+
   @media screen and (max-width: 1024px) {
     margin-left: 70px !important;
     margin-right: 70px !important;
     flex: none;
-    div:nth child(2){
-      display:none;
+    div:nth child(2) {
+      display: none;
     }
     img {
       visibility: visible;
@@ -171,8 +171,8 @@ const Section = styled.div`
   }
 
   @media screen and (max-width: 590px) {
-    h3{
-      margin-top:1rem  !important;
+    h3 {
+      margin-top: 1rem !important;
     }
     p {
       font-size: 0.9rem !important;
@@ -180,7 +180,7 @@ const Section = styled.div`
     h1 {
       font-size: 1.3rem !important;
       font-weight: bolder !important;
-      margin-top:1.5rem !important;
+      margin-top: 1.5rem !important;
     }
     button {
       font-size: 0.7rem !important;
@@ -198,16 +198,16 @@ const Section = styled.div`
     font-family: Lobster;
     font-weight: bolder;
     font-size: 1.3rem;
-    margin-top:1rem;
+    margin-top: 1rem;
   }
   span {
-    color: rgba(67, 172, 247, 0.96);;
+    color: rgba(67, 172, 247, 0.96);
   }
   h1 {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 2.3rem;
     font-weight: bolder;
-    margin-top:1rem;
+    margin-top: 1.3rem;
   }
   img {
     width: 85%;
@@ -216,10 +216,11 @@ const Section = styled.div`
     margin-right: 20px;
   }
   p {
-    font-family: Montserrat, sans-serif;
-    line-height: 2rem ;
-    font-size: 1.3rem ;
-    margin-top: 1.2rem ;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    line-height: 25.92px;
+    font-size: 1rem;
+    margin-top: 1.9rem;
   }
 
   .react-rotating-text-cursor {
@@ -243,28 +244,27 @@ const Section = styled.div`
   button {
     padding: 0.7rem 2rem 0.7rem 2rem;
     color: white;
-    background-color:  rgba(67, 172, 247, 0.96);
+    background-color: rgba(67, 172, 247, 0.96);
     box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;
     border: 0px;
-    border-radius:3rem;
-    font-family: Montserrat, sans-serif;
+    border-radius: 3rem;
     font-size: 0.85rem;
     font-weight: bolder;
     letter-spacing: 0.2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    font-family: 'Space Grotesk', sans-serif;
 
     :hover {
       border: 2px solid rgba(67, 172, 247, 0.96);
       background-color: transparent;
       transition: 0.3s;
       color: rgba(67, 172, 247, 0.96);
-      
     }
     :focus {
       outline: none;
     }
   }
   .social-body {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
 `;

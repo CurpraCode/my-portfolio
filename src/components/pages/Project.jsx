@@ -7,7 +7,7 @@ function Project() {
   return (
     <MainPro id="project">
       <Body>
-        <h1>Some of My Works</h1>
+        <h1>Projects</h1>
 
         <Box>
           <InnerBox data-aos="zoom-in">
@@ -111,8 +111,8 @@ const InnerBox = styled.div`
   flex: 1;
   border-radius:2rem;
   border-radius: 12.8028px;
-    background-color: #f9f9f9;
-    box-shadow: -9.1159px -18.2318px 24.3091px #fff, 9.1159px 18.2318px 24.3091px #eceef1;
+    background-color: ${props=>props.theme.cardColor};
+    box-shadow: ${props=>props.theme.cardShadow};
     width: 100%;
 text-align:center;
 padding: 2rem 1rem;
@@ -134,11 +134,13 @@ padding: 2rem 1rem;
     color: white;
     border-radius:2rem;
     margin-bottom: 1rem;
+    font-family: 'Space Grotesk', sans-serif;
   } 
   a {
     text-decoration: none;
   }
   p{
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 0.95rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;

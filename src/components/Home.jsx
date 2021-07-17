@@ -9,19 +9,25 @@ import Contact from "../components/pages/Contact";
 import Footer from "../components/pages/Footer";
 
 
-function Home() {  
- 
+function Home(props) {  
+  const changeTheme =()=>{
+    if(props?.theme === "light"){
+      props?.setTheme("dark");
+    }else{
+      props?.setTheme("light")
+    }
+  }
+  const icon= props.theme === "light"?<box-icon type='solid' name='moon'></box-icon> : <box-icon name='sun' type='solid' ></box-icon>;
   return (
    
     <BG>
-      <NavBar />
+      <NavBar icons={icon} change={changeTheme} />
       <Body />
       <About />
       <Project />
       <Skill />
       <Contact />
       <Footer />
-    
     </BG>
    
   );
@@ -29,5 +35,8 @@ function Home() {
 export default Home;
 
 const BG = styled.div`
-  background-color: rgb(244,246,246);
+  background-color:${props=>props.theme.pageBackground};
+  p,h1,h3, h2{
+    color: ${props=>props.theme.titleColor};
+  }
   `

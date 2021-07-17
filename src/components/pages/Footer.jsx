@@ -68,7 +68,7 @@ function Footer() {
 export default Footer;
 
 const FooterPage = styled.div`
- background-color: rgb(244,246,246);
+ background-color: ${props=>props.theme.pageBackground};
   box-shadow: 0px -4px 3px 0px rgb(146 207 250 / 96%);
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -90,11 +90,17 @@ const FooterDiv = styled.div`
     margin-right: 70px !important;
   }
   @media screen and (min-width: 690px) {
-   div{ margin-left: 70px !important;
+   div{ 
+     margin-left: 70px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
    }
+  }
+  @media screen and (max-width: 490px){
+    p{
+      margin-top:1.5rem;
+    }
   }
   div {
     padding-top: 2rem;
@@ -107,11 +113,9 @@ const FooterDiv = styled.div`
   p a {
     margin-left: 1.5rem;
   }
-  p {
-    margin-bottom: 1.5rem;
-  }
 `;
 
 const P = styled.p`
   font-family: lobster;
+  padding-bottom:1.5rem;
 `;

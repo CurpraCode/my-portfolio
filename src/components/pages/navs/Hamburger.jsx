@@ -19,9 +19,6 @@ const Burger = styled.div`
   width: 10%;
   height: 2rem;
   position: fixed;
-  background-color: #f9f9f9;
-    box-shadow: -9.1159px -18.2318px 24.3091px #fff, 9.1159px 18.2318px 24.3091px #eceef1;
-    /* padding:0.7rem; */
     border-radius: 12.8028px;
   top: 15px;
   right: 50px;
@@ -40,7 +37,7 @@ const Burger = styled.div`
     border-radius: 10px;
     position:${({open})=>(open ? "absolute" : "unset")};
     transform: origin;
-    background-color: #1f1f1f;
+    background-color: ${props=>props.theme.titleColor};
     transition: all 0.3s linear;
 
     &:nth-child(1) {

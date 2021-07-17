@@ -10,11 +10,11 @@ function Contact() {
   }
 
   return (
-    <ContactDiv id="contact">
+    <ContactDiv id="contact" >
       <ToastContainer limit={1}/>
       <Box>
         <h1>Contact Me</h1>
-        <Form onSubmit={handleSubmit}>
+        <Form onSubmit={handleSubmit} data-aos="fade-up">
           <input
             type="text"
             placeholder="Name"
@@ -77,6 +77,7 @@ const Form = styled.form`
   margin: 0 auto;
   max-width: 440px;
   input {
+    font-family: 'Space Grotesk', sans-serif;
     width: 100%;
     height: 55px;
     font-size: 17px;
@@ -86,8 +87,10 @@ const Form = styled.form`
     border: 2.4px solid;
     background: transparent;
     border-color: rgba(67, 172, 247, 0.96);
+    color:${props=>props.theme.inputColor};
   }
   textarea {
+    font-family: 'Space Grotesk', sans-serif;
     background: transparent;
     width: 100%;
     height: 120px;
@@ -99,6 +102,7 @@ const Form = styled.form`
     padding-left: 10px;
     padding-top: 10px;
     border-color: rgba(67, 172, 247, 0.96);
+    color:${props=>props.theme.inputColor};
   }
   input::placeholder {
     padding-top: 10px;
@@ -121,6 +125,7 @@ const Form = styled.form`
     color:white;
     font-size: 20px;
     font-weight:bold;
+    font-family: 'Space Grotesk', sans-serif;
   }
   button:focus {
     outline: none;
