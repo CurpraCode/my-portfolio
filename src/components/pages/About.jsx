@@ -102,7 +102,8 @@ const AboutDiv = styled.div`
     padding: 0.7rem 2rem 0.7rem 2rem;
     color: white;
     background-color:  rgba(67, 172, 247, 0.96);
-    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;    border: 0px;
+    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;    
+    border: 0px;
     border-radius:3rem;
     letter-spacing: 0.1rem;
     font-size: 1rem;

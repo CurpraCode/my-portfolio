@@ -17,7 +17,7 @@ function Home(props) {
       props?.setTheme("light")
     }
   }
-  const icon= props.theme === "light"?<box-icon type='solid' name='moon'></box-icon> : <box-icon name='sun' type='solid' ></box-icon>;
+  const icon= props.theme === "light"?<box-icon type='solid' name='moon'></box-icon> : <box-icon name='sun' type='solid' color="rgba(255, 255, 255, 0.96)"  ></box-icon>;
   return (
    
     <BG>

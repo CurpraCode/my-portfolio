@@ -74,9 +74,11 @@ const Nav = styled.nav`
   
 `;
 const Toggle=styled.button`
+ background-color:  rgba(67, 172, 247, 0.96);
+    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4; 
 cursor:pointer;
-height:35px;
-width:35px;
+height:40px;
+width:40px;
 border-radius:0.7rem;
 border:none;
 color: ${props=>props.theme.pageBackground};
