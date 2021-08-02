@@ -1,7 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import calc from "../../assets/calc.jpg";
+import wta from "../../assets/wta.png";
 import movieapi from "../../assets/movieapi.jpg";
+import portfolio from "../../assets/portfolio.png";
+import cm from "../../assets/cm.png";
+import dataware from "../../assets/dataware.png";
 
 function Project() {
   return (
@@ -12,16 +15,16 @@ function Project() {
         <Box>
           <InnerBox data-aos="zoom-in">
             <div>
-              <img src={calc} alt="calc" />
+              <img src={wta} alt="calc" />
             </div>
             <div className="detail-card">
-              <h2>JAVASCRIPT UI-CALCULATOR</h2>
+              <h2>WEATHER APP</h2>
               <p> 
-                This UI calculator was built with HTML, CSS AND JavaScript, it
+                This UI weather application was built with React, Redux, Chakra-UI, TypeScript, it
                 is also responsive to mobile view
               </p>
             </div>
-            <a href="https://curpra-calc.netlify.app/">
+            <a href="https://curpraweather.vercel.app/">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
@@ -45,7 +48,7 @@ function Project() {
 
           <InnerBox data-aos="zoom-in">
             <div>
-              <img src="" alt="curtis" />
+              <img src={portfolio} alt="curtis" />
             </div>
             <div className="detail-card">
               <h2>CurtisDev</h2>
@@ -55,6 +58,36 @@ function Project() {
               </p>
             </div>
             <a href="https://curtisdev.netlify.app/">
+              <button>CLICK TO VIEW</button>
+            </a>
+          </InnerBox>
+          <InnerBox data-aos="zoom-in">
+            <div>
+              <img src={dataware} alt="curtis" />
+            </div>
+            <div className="detail-card">
+              <h2>Dataware</h2>
+              <p>
+                This is a landing page website  built with
+                HTML, CSS, and JavaScriptreact.js, styled-components
+              </p>
+            </div>
+            <a href="https://dataware.netlify.app/">
+              <button>CLICK TO VIEW</button>
+            </a>
+          </InnerBox>
+          <InnerBox data-aos="zoom-in">
+            <div>
+              <img src={cm} alt="curtis" />
+            </div>
+            <div className="detail-card">
+              <h2>CurpraMovie</h2>
+              <p>
+                This is full stack web application built with
+                react.js, styled-components, context api, node.js, Mongo db and express
+              </p>
+            </div>
+            <a href="https://movie-webapp.vercel.app/">
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
@@ -121,8 +154,8 @@ padding: 2rem 1rem;
   
 
   img {
-    width: 50%;
-    border-radius:45rem;
+    width: 100%;
+    /* border-radius:5rem; */
   }
   .detail-card {
     padding: 1rem;
