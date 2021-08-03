@@ -11,7 +11,6 @@ function Project() {
     <MainPro id="project">
       <Body>
         <h1>Projects</h1>
-
         <Box>
           <InnerBox data-aos="zoom-in">
             <div>
@@ -69,7 +68,7 @@ function Project() {
               <h2>Dataware</h2>
               <p>
                 This is a landing page website  built with
-                HTML, CSS, and JavaScriptreact.js, styled-components
+                HTML, CSS, and JavaScript
               </p>
             </div>
             <a href="https://dataware.netlify.app/">
@@ -155,7 +154,7 @@ padding: 2rem 1rem;
 
   img {
     width: 100%;
-    /* border-radius:5rem; */
+    border-radius:1rem;
   }
   .detail-card {
     padding: 1rem;

@@ -1,58 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import avatar1 from "../../assets/avatar1.png";
+import dev from "../../assets/dev.svg";
 import ReactRotatingText from "react-rotating-text";
 import "boxicons";
 
 function Body() {
-  //   const textType = document.querySelector(".text-effect");
-  //   const cursorBlink = document.querySelector(".cursor");
-
-  //   const txtArr = [
-  //     "Oyakoya Curtis",
-  //     "a Web Developer",
-  //     "a Front-End Developer",
-  //     "a React Developer",
-  //   ];
-
-  //   const typeDelay = 200;
-  //   const clearDelay = 100;
-  //   const newTextDelay = 2000;
-
-  //   let txtArrIndex = 0;
-  //   let charIndex = 0;
-
-  //   const type = () => {
-  //     if (charIndex < txtArr[txtArrIndex].length) {
-  //       if (!cursorBlink.classList.contains("typing"))
-  //         cursorBlink.classList.add("typingtext");
-  //       textType.textContent += txtArr[txtArrIndex].charAt(charIndex);
-  //       charIndex++;
-  //       setTimeout(type, typeDelay);
-  //     } else {
-  //       cursorBlink.classList.remove("typing");
-  //       setTimeout(erase, newTextDelay);
-  //     }
-  //   };
-  //   const erase = () => {
-  //     if (charIndex > 0) {
-  //       if (!cursorBlink.classList.contains("typing"))
-  //         cursorBlink.classList.add("typing");
-  //       textType.textContent = txtArr[txtArrIndex].substring(0, charIndex - 1);
-  //       charIndex--;
-  //       setTimeout(erase, clearDelay);
-  //     } else {
-  //       cursorBlink.classList.remove("typing");
-  //       txtArrIndex++;
-  //       if (txtArrIndex >= txtArr.length) txtArrIndex = 0;
-  //       setTimeout(type, typeDelay + 1100);
-  //     }
-  //   };
-  //   document.addEventListener("DOMContentLoaded", () => {
-  //     if (txtArr.length) setTimeout(type, newTextDelay + 250);
-  //   });
-
-  return (
+   return (
     <Main id="home">
       <Section>
         <div data-aos="fade-left">
@@ -124,9 +77,9 @@ function Body() {
             </a>
           </div>
         </div>
-        <div data-aos="fade-right">
-          <img src={avatar1} alt="my pics here" />
-        </div>
+        
+          <img src={dev} alt="my pics here" data-aos="fade-right" />
+     
       </Section>
     </Main>
   );
@@ -147,8 +100,6 @@ const Section = styled.div`
   justify-content: space-between;
   align-items: center;
   font-family: Montserrat, sans-serif;
-  /* margin-left: 70px !important; */
-  /* margin-right: 70px; */
 
   @media screen and (max-width: 1024px) {
     margin-left: 70px !important;
@@ -210,7 +161,7 @@ const Section = styled.div`
     margin-top: 1.3rem;
   }
   img {
-    width: 85%;
+    width: 50%;
   }
   box-icon {
     margin-right: 20px;

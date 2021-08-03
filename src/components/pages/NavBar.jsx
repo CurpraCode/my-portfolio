@@ -66,10 +66,15 @@ const Nav = styled.nav`
   h1 {
     font-family: Lobster;
    color: ${props=>props.theme.titleColor};
+   /* background:url("https://res.cloudinary.com/emmaxio/image/upload/v1609334784/giphy.gif");
+   background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; */
   }
   a {
     text-decoration: none;
     color: ${props=>props.theme.titleColor};
+    
   }
   
 `;

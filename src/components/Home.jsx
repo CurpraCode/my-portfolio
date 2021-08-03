@@ -36,6 +36,7 @@ export default Home;
 
 const BG = styled.div`
   background-color:${props=>props.theme.pageBackground};
+      overflow-x: hidden;
   p,h1,h3, h2{
     color: ${props=>props.theme.titleColor};
   }

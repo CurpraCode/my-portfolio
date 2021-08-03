@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "boxicons";
+import typescript from "../../assets/typescript.png"
 
 function Skill() {
   return (
@@ -43,6 +44,16 @@ function Skill() {
         </Flex>
 
         <Flex>
+        <div data-aos="zoom-out">            
+            <box-icon type='logo' name='redux' color="#ad0dfd" size="lg"></box-icon>
+          </div>
+          <div data-aos="zoom-out">            
+          <img
+              src={typescript}
+              alt="typescript"
+              width="40px"
+            />
+          </div>
           <div data-aos="zoom-out">
             <box-icon
               name="nodejs"
@@ -70,7 +81,7 @@ function Skill() {
             ></box-icon>
           </div>
           <div data-aos="zoom-out">
-            <box-icon name="github" type="logo" size="lg"></box-icon>
+            <box-icon name="github" type="logo" size="lg" color="#0e88f2"></box-icon>           
           </div>
         </Flex>
       </BoxSet>
@@ -123,6 +134,7 @@ const Flex = styled.div`
     border-top-left-radius: 150px;
     border-top-right-radius: 150px;
     padding: 2rem;
+    margin-top:2rem;
   }
   div:hover {
     border-top: 5px solid rgba(146, 207, 250, 0.96);
