@@ -5,6 +5,7 @@ import movieapi from "../../assets/movieapi.jpg";
 import portfolio from "../../assets/portfolio.png";
 import cm from "../../assets/cm.png";
 import dataware from "../../assets/dataware.png";
+import airbnb from "../../assets/airbnb.png";
 
 function Project() {
   return (
@@ -60,7 +61,25 @@ function Project() {
               <button>CLICK TO VIEW</button>
             </a>
           </InnerBox>
-          <InnerBox data-aos="zoom-in">
+         
+        </Box>
+        <Box>
+        <InnerBox data-aos="zoom-in">
+            <div>
+              <img src={airbnb} alt="curtis" />
+            </div>
+            <div className="detail-card">
+              <h2>Airbnb-Clone</h2>
+              <p>
+                This is a clone website  built with
+                Reactjs, Nextjs, Tailwind CSS
+              </p>
+            </div>
+            <a href="https://airbnb-curpra-clone.vercel.app/">
+              <button>CLICK TO VIEW</button>
+            </a>
+          </InnerBox>
+        <InnerBox data-aos="zoom-in">
             <div>
               <img src={dataware} alt="curtis" />
             </div>
