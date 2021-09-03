@@ -51,8 +51,8 @@ const AboutSection = styled.div`
     margin-right: 70px;
   }
   @media screen and (max-width: 890px) {
-    margin-left: 70px !important;
-    margin-right: 70px !important; 
+    margin-left: 70px;
+    margin-right: 70px; 
     flex-direction: column !important;
     img {
     width: 75%;

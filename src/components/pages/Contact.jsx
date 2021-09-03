@@ -55,8 +55,6 @@ const ContactDiv = styled.div`
     margin-left: 30px;
   }
   @media screen and (max-width: 890px) {
-    margin-left: 70px !important;
-    margin-right: 70px !important;
     flex-direction: column !important;
     img {
       width: 80%;
