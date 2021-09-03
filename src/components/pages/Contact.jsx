@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import {ToastContainer, toast } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { useForm } from "@formspree/react";
+import mail from "../../assets/mail.svg";
 
 function Contact() {
   const [state, handleSubmit] = useForm("xpzkrgjb");
@@ -10,8 +11,9 @@ function Contact() {
   }
 
   return (
-    <ContactDiv id="contact" >
-      <ToastContainer limit={1}/>
+    <ContactDiv id="contact">
+      <ToastContainer limit={1} />
+      <img src={mail} alt="mail" />
       <Box>
         <h1>Contact Me</h1>
         <Form onSubmit={handleSubmit} data-aos="fade-up">
@@ -45,6 +47,23 @@ function Contact() {
 export default Contact;
 const ContactDiv = styled.div`
   padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 40%;
+    margin-left: 30px;
+  }
+  @media screen and (max-width: 890px) {
+    margin-left: 70px !important;
+    margin-right: 70px !important;
+    flex-direction: column !important;
+    img {
+      width: 80%;
+      margin-right: 0px;
+      margin-bottom: 3rem;
+    }
+  }
 `;
 const Box = styled.div`
   margin: 0 auto;
@@ -77,7 +96,7 @@ const Form = styled.form`
   margin: 0 auto;
   max-width: 440px;
   input {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     width: 100%;
     height: 55px;
     font-size: 17px;
@@ -87,10 +106,10 @@ const Form = styled.form`
     border: 2.4px solid;
     background: transparent;
     border-color: rgba(67, 172, 247, 0.96);
-    color:${props=>props.theme.inputColor};
+    color: ${(props) => props.theme.inputColor};
   }
   textarea {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     background: transparent;
     width: 100%;
     height: 120px;
@@ -102,7 +121,7 @@ const Form = styled.form`
     padding-left: 10px;
     padding-top: 10px;
     border-color: rgba(67, 172, 247, 0.96);
-    color:${props=>props.theme.inputColor};
+    color: ${(props) => props.theme.inputColor};
   }
   input::placeholder {
     padding-top: 10px;
@@ -122,10 +141,10 @@ const Form = styled.form`
     border: 0px;
     border-radius: 3rem;
     text-align: center;
-    color:white;
+    color: white;
     font-size: 20px;
-    font-weight:bold;
-    font-family: 'Space Grotesk', sans-serif;
+    font-weight: bold;
+    font-family: "Space Grotesk", sans-serif;
   }
   button:focus {
     outline: none;

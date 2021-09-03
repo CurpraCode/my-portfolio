@@ -1,14 +1,14 @@
 import React from "react";
 import Curtis_Resume from "../../assets/Curtis_Resume.pdf";
 import styled from "styled-components";
-// import circle from "../../assets/circle.svg";
+import about from "../../assets/about.svg";
 import "boxicons";
 
 function About() {
   return (
     <MainAbout id="about">
       <AboutSection>
-        <ImgDiv></ImgDiv>
+        <img src={about} alt="about me" />
         <AboutDiv>
           <h1>About Me</h1>
           <p data-aos="fade-left">
@@ -21,14 +21,11 @@ function About() {
             work on various projects. Aside code I love watching movies and
             travelling to different places.
           </p>
-         
-            {/* <i class="bx bxs-like bx-fade-down-hover"></i> */}
-            <a href={Curtis_Resume} download="curtis-resume">
-            <button data-aos="fade-up">
-              Download My Resume
-              </button>
-            </a>
-         
+
+          {/* <i class="bx bxs-like bx-fade-down-hover"></i> */}
+          <a href={Curtis_Resume} download="curtis-resume">
+            <button data-aos="fade-up">Download My Resume</button>
+          </a>
         </AboutDiv>
       </AboutSection>
     </MainAbout>
@@ -42,18 +39,26 @@ const MainAbout = styled.div`
 const AboutSection = styled.div`
   margin: 0 auto;
   max-width: 1240px;
-  /* font-family: Montserrat, sans-serif; */
-  /* height: 40vh; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  img {
+    width: 40%;
+    margin-right: 30px;
+  }
   @media screen and (max-width: 1024px) {
     margin-left: 70px;
     margin-right: 70px;
   }
-  @media screen and (max-width: 840px) {
-    margin-left: 70px;
-    margin-right: 70px;
+  @media screen and (max-width: 890px) {
+    margin-left: 70px !important;
+    margin-right: 70px !important; 
+    flex-direction: column !important;
+    img {
+    width: 75%;
+    margin-right: 0px;
+    margin-bottom:3rem;
+  }
   }
   @media screen and (max-width: 999px) {
     h1 {
@@ -62,7 +67,7 @@ const AboutSection = styled.div`
   }
   @media screen and (max-width: 590px) {
     margin-left: 20px;
-    margin-right:20px;
+    margin-right: 20px;
   }
   @media screen and (max-width: 350px) {
     a {
@@ -70,15 +75,13 @@ const AboutSection = styled.div`
     }
   }
 `;
-const ImgDiv = styled.div`
-  img {
-    width: 100%;
-  }
-`;
+// const ImgDiv = styled.div`
+
+// `;
 const AboutDiv = styled.div`
-@media screen and (max-width: 590px) {
-    p{
-    font-size:0.8rem;
+  @media screen and (max-width: 590px) {
+    p {
+      font-size: 0.8rem;
     }
   }
   a {
@@ -86,7 +89,6 @@ const AboutDiv = styled.div`
     color: white;
     font-weight: bolder;
     font-size: 1.1rem;
-   
   }
   h1 {
     font-family: lobster;
@@ -94,24 +96,24 @@ const AboutDiv = styled.div`
   }
   p {
     line-height: 2rem;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     margin-bottom: 3rem;
     text-align: justify;
   }
   button {
     padding: 0.7rem 2rem 0.7rem 2rem;
     color: white;
-    background-color:  rgba(67, 172, 247, 0.96);
-    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;    
+    background-color: rgba(67, 172, 247, 0.96);
+    box-shadow: 0 18.2571px 21.6157px -15.9059px #3189f4;
     border: 0px;
-    border-radius:3rem;
+    border-radius: 3rem;
     letter-spacing: 0.1rem;
     font-size: 1rem;
     font-weight: bolder;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
 
     :hover {
-      border:2px solid rgba(67, 172, 247, 0.96);
+      border: 2px solid rgba(67, 172, 247, 0.96);
       background-color: transparent;
       transition: 0.3s;
       color: rgba(67, 172, 247, 0.96);
